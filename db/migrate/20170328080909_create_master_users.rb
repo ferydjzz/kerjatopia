@@ -4,7 +4,7 @@ class CreateMasterUsers < ActiveRecord::Migration[5.0]
       t.string :email
       t.integer :role_id
       t.integer :start_job_level
-      t.string :full_name
+      t.string :name
       t.datetime :deleted_at
 
       t.timestamps
