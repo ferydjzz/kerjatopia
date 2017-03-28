@@ -1,14 +1,12 @@
 require 'rails_helper'
 
-RSpec.describe MasterUser, type: :model do
+RSpec.describe User, type: :model do
   describe 'validations' do
     it { should validate_presence_of(:email) }
     it { should validate_presence_of(:name) }
     it { should validate_presence_of(:role_id) }
-    it { should validate_presence_of(:start_job_level) }
-  end
+    it { should validate_presence_of(:job_level) }
 
-  describe '.is_valid_user(email)' do
     it 'should return true if email exist in MasterUser' do
     end
 
